@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'database',
+			'database'  => 'la_news',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',
