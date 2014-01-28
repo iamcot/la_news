@@ -11,14 +11,8 @@
 |
 */
 
-//Route::get('/', 'HomeController@showWelcome');
-Route::get('/', function () {
-    return View::make('body');
-});
-Route::get('contact', function () {
-    return View::make('contact');
-});
-Route::get('user', function () {
-    $user = User::all();
-    return View::make('body')->with('user', $user);
-});
+Route::any("/", [
+    'as' => 'user/login',
+    'uses' => 'UserController@loginAction'
+]
+);

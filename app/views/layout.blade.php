@@ -4,6 +4,10 @@
     <title>Test laravel</title>
 </head>
 <body>
-@yield('body')
+@include('header')
+<div class="content">
+    @yield('body')
+</div>
+@include('footer')
 </body>
 </html>
